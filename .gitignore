@@ -1,0 +1,22 @@
+# Hugo output directory
+/public/
+
+# Hugo cache directory
+/resources/
+
+# Ignore generated files
+/resources/_gen/
+
+# Ignore temporary files
+*.bak
+*.swp
+*.tmp
+
+# Ignore log files
+*.log
+
+# Ignore macOS specific files
+.DS_Store
+
+# Ignore Windows specific files
+Thumbs.db
