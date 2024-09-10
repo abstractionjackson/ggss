@@ -1,2 +1,45 @@
-<h1>{{ site.Title }}</h1>
-{{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+<nav id="topNav" class="container">
+  <ul class="menu-toggle">
+    <li>
+      <script>
+        const toggleShowMenu = () => {
+          const body = document.querySelector('body');
+          body.classList.toggle('lock-scroll');
+          const menu = document.querySelector('ul.menu');
+          menu.classList.toggle('show');
+        };
+      </script>
+      <button onclick="toggleShowMenu()">Menu</button>
+    </li>
+  </ul>
+  <ul class="menu">
+    <button class="outline close" onclick="toggleShowMenu()">Close</button>
+    <li>
+      <a href="#">Products</a>
+    </li>
+    <li>
+      <a href="#">Services</a>
+    </li>
+    <li>
+      <a href="#">Our Story</a>
+    </li>
+    <li>
+      <a href="#">Our Values</a>
+    </li>
+  </ul>
+  <ul class='logo'>
+    <li>
+      <a href="{{ .Site.BaseURL }}">
+        {{ with resources.Get "images/logo.png" | resources.Fingerprint }}
+        <img src="{{ .Permalink }}" alt="Logo" style="width: 2.5rem; height: 2.5rem;" />
+        {{ end }}
+      </a>
+      </a>
+    </li>
+  </ul>
+  <ul class="contact">
+    <li>
+      <button class="secondary">Contact</button>
+    </li>
+  </ul>
+</nav>
