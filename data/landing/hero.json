@@ -1,0 +1,13 @@
+{
+    "text": {
+        "super": "Web Development Solutions",
+        "main": "Free Rapid Prototyping for Startups and Small Businesses",
+        "sub": "Launch your next project with a free prototype from GGSS. We specialize in web development solutions for startups and small businesses, and our team of experts will help you bring your ideas to life."
+    },
+    "actions": {
+        "buttons": {
+            "discover":  "Discover Our Services",
+            "about": "About GGSS"
+        }
+    }
+}
