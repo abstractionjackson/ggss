@@ -1,0 +1,27 @@
+{{ with resources.Get "images/ggss_hero.webp" }}
+<div class="inner" style="background-image: url({{.RelPermalink}})">
+  <div class="content container">
+    <header>
+      <hgroup class="tagline">
+        <p>
+          Turn your million-dollar idea into an app or simply establish a
+          presence online.
+        </p>
+        <p>
+          <strong>Golden Gate Software Solutions</strong> builds professional
+          websites, and services web development solutions at scale for startups
+          and small businesses alike.
+        </p>
+      </hgroup>
+      <hgroup class="actions">
+        <a href="#">
+          <button>Discover Solutions</button>
+        </a>
+        <a href="#">
+          <button class="secondary">About GGSS</button>
+        </a>
+      </hgroup>
+    </header>
+  </div>
+</div>
+{{ end }}
