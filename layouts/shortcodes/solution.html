@@ -1,0 +1,12 @@
+<article class="solution">
+  <header>
+    <p class="title">{{ .Get "title" }}</p>
+    {{ with resources.Get (printf "icons/%s.svg" (.Get "icon")) |
+    resources.Fingerprint }}
+    <img class="icon" src="{{ .RelPermalink }}" />
+    {{ end }}
+  </header>
+  <main>
+    <p>{{ .Inner | markdownify }}</p>
+  </main>
+</article>

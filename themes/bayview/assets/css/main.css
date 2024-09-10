@@ -47,7 +47,17 @@ nav#topNav {
   padding: 0rem 2rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
 }
-
+/* Containers */
+/* SINGLE */
+#single-header {
+  text-align: center;
+  padding-top: 1.5rem;
+  margin: auto;
+}
+#single-header p {
+  font-style: italic;
+}
+/* Components */
 /* HERO */
 section.hero {
   height: 100%;
@@ -122,6 +132,26 @@ section.hero .inner::before {
 }
 .hero header hgroup.actions a {
   margin: 0 0.5rem;
+}
+/* SOLUTION */
+.solution {
+  max-width: 640px;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+.solution header {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+.solution header > * {
+  margin: 0 1rem;
+}
+.solution .title {
+  font-size: 2em;
+}
+.solution .icon {
+  width: 2rem;
 }
 
 @media screen and (min-width: 768px) {

@@ -39,7 +39,9 @@
   </ul>
   <ul class="contact">
     <li>
-      <button class="secondary">Contact</button>
+      {{ with .Site.Data.nav.menu.tertiary}}
+      <button class="pico-background-red-500">{{ .text }}</button>
+      {{ end }}
     </li>
   </ul>
 </nav>
