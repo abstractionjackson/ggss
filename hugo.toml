@@ -2,3 +2,5 @@ baseURL = 'https://ggss.abstractionjackson.com/'
 languageCode = 'en-us'
 title = 'Golden Gate Software Solutions'
 theme = 'bayview'
+[params]
+email = 'yachtfish903@flounderfantasy.com'

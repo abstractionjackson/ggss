@@ -42,9 +42,11 @@
   </ul>
   <ul class="contact">
     <li>
-      {{ with .Site.Data.nav.menu.tertiary}}
-      <button class="pico-background-red-500">{{ .text }}</button>
-      {{ end }}
+      <a href="mailto:{{ .Site.Params.email }}" target="_blank">
+        {{ with .Site.Data.nav.menu.tertiary}}
+        <button class="pico-background-red-500">{{ .text }}</button>
+        {{ end }}
+      </a>
     </li>
   </ul>
 </nav>
