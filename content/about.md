@@ -1,5 +1,5 @@
 +++
-title = 'About'
+title = 'About GGSS'
 date = 2024-09-12T11:27:38-07:00
 draft = false
 +++
