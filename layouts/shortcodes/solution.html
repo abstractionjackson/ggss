@@ -1,4 +1,4 @@
-<article class="solution">
+<article class="solution" id='{{ .Get "title" }}'>
   <header>
     <p class="title">{{ .Get "title" }}</p>
     {{ with resources.Get (printf "icons/%s.svg" (.Get "icon")) |

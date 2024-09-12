@@ -7,8 +7,6 @@ body {
 }
 main {
   padding: 0 !important;
-  height: 100%;
-  min-height: calc(100% - var(--topNav-height));
 }
 footer#site-footer {
   padding: 1rem;
@@ -19,6 +17,33 @@ footer#site-footer {
 body.lock-scroll {
   overflow: hidden;
 }
+/* Containers */
+/* BASE */
+#site-header {
+  padding: 0;
+}
+#site-main {
+}
+/* SINGLE */
+#single-header {
+  text-align: center;
+  padding-top: 1.5rem;
+  margin: auto;
+}
+#single-header p {
+  font-style: italic;
+}
+/* Components */
+/* NAV */
+nav#topNav {
+  margin: 0;
+  width: 100%;
+  height: var(--topNav-height);
+  max-width: initial;
+  padding: 0rem 2rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
 .menu {
   display: none;
 }
@@ -46,28 +71,9 @@ button.close {
   padding: 1rem;
   font-size: 1em;
 }
-nav#topNav {
-  margin: 0;
-  width: 100%;
-  height: var(--topNav-height);
-  max-width: initial;
-  padding: 0rem 2rem;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
-}
-/* Containers */
-/* SINGLE */
-#single-header {
-  text-align: center;
-  padding-top: 1.5rem;
-  margin: auto;
-}
-#single-header p {
-  font-style: italic;
-}
-/* Components */
 /* HERO */
 section.hero {
-  height: 100%;
+  height: calc(100vh - var(--topNav-height));
   background-size: cover;
   background-position: center;
   display: flex;
@@ -161,6 +167,7 @@ section.hero .inner::before {
   width: 2rem;
 }
 
+/* MEDIA */
 @media screen and (min-width: 768px) {
   .menu-toggle {
     display: none;
@@ -168,6 +175,9 @@ section.hero .inner::before {
   ul.menu {
     display: flex;
     order: 2;
+  }
+  ul.menu > li.root {
+    display: none;
   }
   ul.logo {
     order: 1;
