@@ -10,6 +10,12 @@ main {
   height: 100%;
   min-height: calc(100% - var(--topNav-height));
 }
+footer#site-footer {
+  padding: 1rem;
+  background-color: var(--pico-background-color);
+  color: var(--pico-text-color);
+  text-align: center;
+}
 body.lock-scroll {
   overflow: hidden;
 }
