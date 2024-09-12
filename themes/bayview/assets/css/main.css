@@ -7,7 +7,8 @@ body {
 }
 main {
   padding: 0 !important;
-  height: calc(100% - var(--topNav-height));
+  height: 100%;
+  min-height: calc(100% - var(--topNav-height));
 }
 body.lock-scroll {
   overflow: hidden;
