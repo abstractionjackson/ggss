@@ -1,11 +1,16 @@
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
-<link rel="icon" type="image/x-icon" href="{{ "favicon.ico" | absURL }}">
-{{ with resources.Get "css/pico.min.css" }}
-<link rel="stylesheet" href="{{ .RelPermalink }}">
-{{ end }}
-{{ with resources.Get "css/pico.colors.min.css" }}
-<link rel="stylesheet" href="{{ .RelPermalink }}">
-{{ end }}
-{{ partialCached "head/css.html" . }}
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
+<meta
+  name="google-site-verification"
+  content="-ZH0GRbHNKAc0X0q9AeUSiVeH_Ew-r20NUYlknPUwXE"
+/>
+<title>
+  {{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title
+  site.Title }}{{ end }}
+</title>
+<link rel="icon" type="image/x-icon" href="{{ "favicon.ico" | absURL }}"> {{
+with resources.Get "css/pico.min.css" }}
+<link rel="stylesheet" href="{{ .RelPermalink }}" />
+{{ end }} {{ with resources.Get "css/pico.colors.min.css" }}
+<link rel="stylesheet" href="{{ .RelPermalink }}" />
+{{ end }} {{ partialCached "head/css.html" . }}
