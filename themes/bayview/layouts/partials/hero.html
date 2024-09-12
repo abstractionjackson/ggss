@@ -1,7 +1,10 @@
 {{ $text := .Site.Data.landing.hero.text }} {{ $actions :=
 .Site.Data.landing.hero.actions }} {{ with resources.Get "images/ggss_hero.webp"
 }}
-<div class="inner" style="background-image: url({{.RelPermalink}})">
+<div
+  class="inner"
+  style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url({{.RelPermalink}})"
+>
   <div class="content container">
     <header>
       <hgroup class="text">
