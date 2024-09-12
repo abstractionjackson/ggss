@@ -166,6 +166,18 @@ section.hero .inner::before {
 .solution .icon {
   width: 2rem;
 }
+/* Headshot */
+figure.headshot {
+  width: fit-content;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+figure.headshot > img {
+  border-radius: 50%;
+  width: 250px;
+  margin: auto;
+}
 
 /* MEDIA */
 @media screen and (min-width: 768px) {
