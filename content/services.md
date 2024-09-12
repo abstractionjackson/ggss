@@ -1,8 +1,9 @@
 +++
-title = 'World-Class Software Solutions'
+title = 'Your Software, Solved.'
 subtitle = "Golden Gate Software Solutions offers a wide range of services to help you build the software you need."
 date = 2024-09-10T11:15:48-07:00
 draft = false
+header_image = "solutions_header.webp"
 +++
 
 {{< solution title="Web Design" icon="computer" >}}

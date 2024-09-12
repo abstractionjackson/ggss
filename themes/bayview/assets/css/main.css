@@ -27,8 +27,16 @@ body.lock-scroll {
 /* SINGLE */
 #single-header {
   text-align: center;
-  padding-top: 1.5rem;
+  padding: 3rem 1rem;
   margin: auto;
+  width: 100%;
+  max-width: none;
+  background-size: cover;
+  background-position: center;
+}
+#single-header h1,
+#single-header p {
+  color: white;
 }
 #single-header p {
   font-style: italic;
