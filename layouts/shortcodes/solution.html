@@ -1,6 +1,8 @@
-<article class="solution" id='{{ .Get "title" }}'>
+<article class="solution">
   <header>
-    <p class="title">{{ .Get "title" }}</p>
+    <h3 class="title" id='{{ .Get "title" | anchorize }}'>
+      {{ .Get "title" }}
+    </h3>
     {{ with resources.Get (printf "icons/%s.svg" (.Get "icon")) |
     resources.Fingerprint }}
     <img class="icon" src="{{ .RelPermalink }}" />
