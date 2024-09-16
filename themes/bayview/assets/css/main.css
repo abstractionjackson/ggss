@@ -80,6 +80,22 @@ button.close {
   padding: 1rem;
   font-size: 1em;
 }
+.menu-toggle .icon {
+  background-color: transparent !important;
+  color: var(--pico-text-color);
+  border: none;
+}
+.menu-toggle .icon > svg {
+  width: 2rem;
+  height: 2rem;
+}
+#topNav .contact button {
+  border-color: var(--pico-color-red-500);
+}
+#topNav .contact svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
 /* HERO */
 section.hero {
   height: calc(100vh - var(--topNav-height));
