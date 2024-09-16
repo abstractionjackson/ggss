@@ -4,3 +4,4 @@ title = 'Golden Gate Software Solutions'
 theme = 'bayview'
 [params]
 email = 'yachtfish903@flounderfantasy.com'
+ogMetaImage = "images/logo.png"

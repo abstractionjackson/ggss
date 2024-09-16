@@ -1,0 +1,42 @@
+{{ $ogMetaImage := (resources.Get .Site.Params.ogMetaImage).RelPermalink }}
+<!-- Primary Meta Tags -->
+<title>
+  {{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title
+  site.Title }}{{ end }}
+</title>
+<meta
+  name="description"
+  content="Golden Gate Software Solutions offers expert web design, app development, SEO services, and maintenance to help businesses build, optimize, and maintain their digital presence. Let us turn your ideas into powerful digital solutions."
+/>
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://ggss.abstractionjackson.com/" />
+<meta
+  property="og:title"
+  content="Web Design Services - Golden Gate Software Solutions"
+/>
+<meta
+  property="og:description"
+  content="Golden Gate Software Solutions offers expert web design, app development, SEO services, and maintenance to help businesses build, optimize, and maintain their digital presence. Let us turn your ideas into powerful digital solutions."
+/>
+<meta property="og:image" content="{{- $ogMetaImage -}}" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://ggss.abstractionjackson.com/" />
+<meta
+  property="twitter:title"
+  content="Web Design Services - Golden Gate Software Solutions"
+/>
+<meta
+  property="twitter:description"
+  content="Golden Gate Software Solutions offers expert web design, app development, SEO services, and maintenance to help businesses build, optimize, and maintain their digital presence. Let us turn your ideas into powerful digital solutions."
+/>
+<meta property="twitter:image" ccontent="{{- $ogMetaImage -}}" />
+
+<!-- Google -->
+<meta
+  name="google-site-verification"
+  content="-ZH0GRbHNKAc0X0q9AeUSiVeH_Ew-r20NUYlknPUwXE"
+/>
